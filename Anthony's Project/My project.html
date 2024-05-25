@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title style="font-family: 'Courier New', Courier, monospace;">Jeffrey's Toys</title>
+    <link rel="icon"href="images(7).jpeg">
+    <style>
+        /* CSS Styles */
+        /* Header */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            color:black;
+        }
+
+
+        /* Main */
+        main {
+            padding: 20px;
+        }
+
+        /* Navigation */
+        nav {
+            text-align: center;
+            margin-bottom: 20px;
+            background-color:burlywood;
+            border: 1 solid;
+            border-width: 100%;
+        }
+        li a:hover{
+            color: #333;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+           
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+           
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        img{
+            object-fit: cover;
+        }
+
+        /* Search Bar */
+        .search-bar {
+            text-align: center;
+            margin-bottom: 20px;  
+            justify-self: right;
+        } 
+
+        .search-bar input[type="text"] {
+            padding: 8px;
+            width: 200px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .search-bar button {
+            padding: 8px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .search-bar {
+            /* Use appropriate selector for your search element */
+            float: left; /* or position: absolute; left: 0; for absolute positioning */
+            margin-right: 20px; /* Optional: Add margin to separate from other content */
+        }
+        
+
+        /* Sections */
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            text-align: center;
+        }
+
+        /* Cards */
+        .card {
+            background-color: #f9f9f9;
+            border: 1px solid #dddddd;
+            border-radius: 5px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            width: 300px;
+            display: inline-block;
+            margin-right: 20px;
+            vertical-align: top; /* Ensure cards are aligned at the top */
+        }
+
+        .card img {
+            max-width: 100%;
+            max-height: 100%;
+            margin-bottom: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .faqs {
+            color:rgb(0, 13, 128);
+            text-align:center;
+            text-indent:10px;
+            background-color: #c7a1a1;
+        }
+         .first-pick{
+            margin: auto;
+            padding: 20px;
+            object-fit: cover;
+            align-self: center;
+         }
+         html{
+            background-color:wheat;
+         }
+         /*.second-pick {
+            background-color: black;
+            width: 100%;
+            height: 100%;
+            margin: 50px 50px 50px 50px;
+            border:2px solid blueviolet;
+            border-radius: 3px;
+         }*/
+         body {
+            font-family:Arial, Helvetica, sans-serif;
+         }
+         /*Large screens */
+         @media (min-width: 1024px) {
+            /*Desktop styles */
+         }
+        /*Medium screens */
+           @media (min-width: 1023px) and (min-width:768px) {
+            /*Tablet tyles */
+         }
+        /*Small screens */
+          @media (max-width: 767px) {
+            /*Mobile styles */
+         }
+         #our-story h2 p{
+            text-align: right;
+            text-decoration-color: aqua;
+         }
+         
+         .container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 20px;
+         }
+         .content{
+            flex: 1;
+            margin-right: 20px;
+         }
+         .image img{
+            max-width: 100%;
+            height: auto;
+            border: 2px solid;
+            border-color: purple;
+            margin: 20px;
+            padding:10px;
+            
+         }
+    </style>
+</head>
+<body>
+    <header>
+        <!--<div class="logo">
+            <a href="#"><img src="Browse original designs from Logood_id _ 99designs.jpeg" alt="Jeffrey's Toys Logo" width="75px"height="75px"></a>
+        </div>-->
+        <h1>Jeffrey's Toys</h1>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <button onclick="search()">Search</button>
+        </div>
+        <br>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    
+    </header>
+
+    <main>
+        <section>
+            <div class="first-pick">
+                <img src="pexels-pixabay-163036.jpg" alt="Toy 1" width="1300px" height="450px">
+                </div>
+        </section>
+        <section class="new-arrivals">
+            <h2>New Arrivals</h2>
+            <div class="card">
+                <img src="4f92fe17-98c2-4904-9e6b-4b3065d6bffe.jpeg"alt="Toy 1"width="250px"height="250px">
+                <h3>Jeep</h3>
+                <p>$30.25</p>
+            </div>
+            <div class="card">
+                <img src="IMG-20240513-WA0012.jpg" alt="Toy 2"width="250px"height="250px">
+                <h3>Lamborghini</h3>
+                <p>$35.75</p>
+            </div>
+            <div class="card">
+                <img src="image7.jpeg" alt="Toy 3"width="250px"height="250px">
+                <h3>Cute bunny</h3>
+                <p>#28.39</p>
+            </div>
+            <div class="card">
+                <img src="67fcf5c9-f9de-4fed-99b2-09dde6bcef79.jpeg" alt="Toy 4"width="250px"height="250px">
+                <h3>Toy store</h3>
+                <p>$50.58</p>
+            </div>
+            <!-- Add more cards here -->
+        </section>
+        <div class="second-pick">
+            <img src="pexels-cottonbro-3662667.jpg" alt="Toy 1" width="1300px"height="600px" style="display: block;">
+            </div>
+
+        <section class="best-sellers">
+            <h2>Best Sellers</h2>
+            <div class="card">
+                <img src="IMG-20240513-WA0008.jpg" alt="Best Seller 1">
+                <h3>Miss beauty</h3>
+                <p>$58.92</p>
+            </div>
+            <div class="card">
+                <img src="Knitted stuffed bear toy, knitted plush personalized bear, knitted dressed teddy bear, bear nursery doll (1).jpeg"alt="Best Seller 4"height="548px">
+                <h3>Mama bear</h3>
+                <p>$60.02</p>
+            </div>
+            <div class="card">
+                <img src="IMG-20240513-WA0009.jpg" alt="Best Seller 2">
+                <h3>Miss America</h3>
+                <p>$58.92</p>
+            </div>
+            <div class="card">
+                <img src="Aosom Kids Ride On Sports Car, 12V Battery Powered Electric Toy, w_ Parent Remote Control, Bluetooth, Horn, Music & LED Headlights Taillights, for 3-6 Years Old, Black.jpeg" alt="Best Seller 3"height="300px">
+                <h3>Sports car</h3>
+                    <p>$100.00</p>
+            </div>
+            <!-- Add more cards here -->
+        </section>
+
+        <section class="recommendations">
+            <h2>Recommendations For You</h2>
+            <div class="card">
+                <img src="IMG-20240513-WA0011.jpg" alt="Recommendation 1"width="250px"height="250px">
+                <h3>Toy story</h3>
+                <p>$25.00</p>
+            </div>
+            <div class="card">
+                <img src="IMG-20240513-WA0003.jpg" alt="Recommendation 2"width="250px"height="250px">
+                <h3>Toy story</h3>
+                <p>$38.00</p>
+            </div>
+            <div class="card">
+                <img src="IMG-20240513-WA0010.jpg" alt="Recommendation 3"width="250px"height="250px">
+                <h3>Toy story</h3>
+                <p>$26.00</p>
+            </div>
+            <div class="card">
+                <img src="3c8415ce-9779-4951-b294-2d264577003d.jpeg" alt="Recommendation 4"width="250px"height="250px">
+                <h3>Magesty</h3>
+                <p>$50.00</p>
+            </div>
+            <!-- Add more cards here -->
+        </section>
+
+        <section class="our-story">
+            <h2>Our Story</h2>
+            <div class="container">
+                <div class="content">
+                <p>Welcome to Jeffrey's Toys, where every toy tells a story! Our journey began with a simple belief: that every child deserves to experience the magic of play.As parents ourselves, we understand the joy that comes from watching a child's imagination soar. That's why we set out on a mission to handpick the most captivating, engaging, and high-quality toys that inspire creativity and spark endless adventures.</p>
+                </div>
+            <div class="image">
+                <img src="download (2).jpeg" alt="anime">
+            </div>
+                <!-- Add more story content here -->
+        </section>
+
+        <section class="instagram">
+            <h2>FOLLOW US ON INSTAGRAM</h2>
+            <div class="instagram-feed">
+                <img src="download (1).jpeg"alt="bunny"height="200px">
+                <img src="download.jpeg" alt="bear"height="200px">
+                <img src="images.jpeg" alt="african"height="200px">
+                <img src="images (2).jpeg" alt="minion"height="200px">
+                <img src="images (3).jpeg" alt="stick man"height="200px">
+                <img src="images (4).jpeg" alt="indian"height="200px">
+                <img src="images (5).jpeg" alt="fluffy"height="200px">
+                <img src="images (6).jpeg" alt="cute"height="200px">
+                <!-- Your Instagram feed widget or images here -->
+            </div>
+        </section>
+
+        <section class="logo-cards">
+            <h2>Our Partners</h2>
+            <div style="justify-content: space-evenly;align-items:center;">
+                <div class="card"style="width:50px;height:25px;background-color:black;padding:none;" >
+                    <img src="toy company logos - Google Search.jpeg"alt="Partner Logo 1"width="100px"height="70px">
+                </div>
+              
+                <div class="card" style="width:50px;height:25px;background-color:black;padding:none;" >
+                    <img src="Letter Planet Logo.jpeg" alt="Partner Logo 2"width="100px"height="70px">
+                </div>
+                <div class="card"style="width:50px;height:25px;background-color:black;padding:none;" >
+                    <img src="Sheep Love Logo.jpeg"alt="Partner Logo 1"width="100px"height="70px">
+                </div> 
+              
+                <div class="card"style="width:50px;height:25px;background-color:black;padding:none;25" >
+                    <img src="Toy Story logo.jpeg" alt="Partner Logo 2"width="100px"height="70px">
+                </div>
+                </div>
+                <!-- Add more cards here -->
+        
+        </section>
+
+        <section class="faqs">
+            <h2>FAQs</h2>
+            <div class="faq-item">
+                <div class="faq-question">What are your shipping options?</div>
+                <div class="faq-answer">We offer standard and expedited shipping options. Standard shipping usually takes 3-5 business days, while expedited shipping takes 1-2 business days.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">How can I contact customer support?</div>
+
+                <script src="script.js"></script>
+                <iframe id="NECaptchaSafeWindow" style="display: none;"></iframe>
+                <div id="goog-gt-tt" class="VIpgJd-yAWNEb-L7lbkb skiptranslate" style="border-radius: 12px; margin: 0 0 0 -23px; padding: 0; font-family: 'Google Sans', Arial, sans-serif;" data-id="">
+                    <div id="goog-gt-vt" class="VIpgJd-yAWNEb-hvhgNd">
+                        <div class=" VIpgJd-yAWNEb-hvhgNd-l4eHX-i3jM8c">
+                            <img src="https://fonts.gstatic.com/s/i/productlogos/translate/v14/24px.svg" width="24" height="24" alt="">
+                        </div>
+                        <div class=" VIpgJd-yAWNEb-hvhgNd-k77Iif-i3jM8c">
+                            <div class="VIpgJd-yAWNEb-hvhgNd-IuizWc" dir="ltr">Original text</div>
+                            <div id="goog-gt-original-text" class="VIpgJd-yAWNEb-nVMfcd-fmcmS VIpgJd-yAWNEb-hvhgNd-axAV1">
+
+                            </div>
+                        </div>
+                        <div class="VIpgJd-yAWNEb-hvhgNd-N7Eqid ltr">
+                            <div class="VIpgJd-yAWNEb-hvhgNd-N7Eqid-B7I4Od ltr" dir="ltr">
+                                <div class="VIpgJd-yAWNEb-hvhgNd-UTujCb">Rate this translation</div>
+                                <div class="VIpgJd-yAWNEb-hvhgNd-eO9mKe">Your feedback will be used to help improve Google Translate</div>
+                            </div>
+                            <div class="VIpgJd-yAWNEb-hvhgNd-xgov5 ltr">
+                                <button id="goog-gt-thumbUpButton" type="button" class="VIpgJd-yAWNEb-hvhgNd-bgm6sf" title="Good translation" aria-label="Good translation" aria-pressed="false"><span id="goog-gt-thumbUpIcon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M">
+                                        <path d="M21 7h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 0S7.08 6.85 7 7H2v13h16c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73V9c0-1.1-.9-2-2-2zM7 18H4V9h3v9zm14-7l-3 7H9V8l4.34-4.34L12 9h9v2z">
+
+                                    </path>
+                                </svg>
+                            </span>
+                            <span id="goog-gt-thumbUpIconFilled">
+                                <svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M">
+                                    <path d="M21 7h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 0S7.08 6.85 7 7v13h11c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73V9c0-1.1-.9-2-2-2zM5 7H1v13h4V7z">
+
+                                    </path>
+                                </svg>
+                            </span>
+                        </button>
+                        <button id="goog-gt-thumbDownButton" type="button" class="VIpgJd-yAWNEb-hvhgNd-bgm6sf" title="Poor translation" aria-label="Poor translation" aria-pressed="false">
+                            <span id="goog-gt-thumbDownIcon"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M">
+                                <path d="M3 17h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 24s7.09-6.85 7.17-7h5V4H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2zM17 6h3v9h-3V6zM3 13l3-7h9v10l-4.34 4.34L12 15H3v-2z">
+                                    
+                                </path>
+                            </svg>
+                        </span>
+                        <span id="goog-gt-thumbDownIconFilled">
+                            <svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M">
+                                <path d="M3 17h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 24s7.09-6.85 7.17-7V4H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2zm16 0h4V4h-4v13z">
+
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div id="goog-gt-votingHiddenPane" class="VIpgJd-yAWNEb-hvhgNd-aXYTce">
+                <form id="goog-gt-votingForm" action="//translate.googleapis.com/translate_voting?client=te_lib" method="post" target="votingFrame" class="VIpgJd-yAWNEb-hvhgNd-aXYTce">
+                    <input type="text" name="sl" id="goog-gt-votingInputSrcLang">
+                    <input type="text" name="tl" id="goog-gt-votingInputTrgLang">
+                    <input type="text" name="query" id="goog-gt-votingInputSrcText">
+                    <input type="text" name="gtrans" id="goog-gt-votingInputTrgText">
+                    <input type="text" name="vote" id="goog-gt-votingInputVote">
+                </form>
+                <iframe name="votingFrame" frameborder="0" id="aria1st0ut12ph0">
+
+                </iframe>
+            </div>
+        </div>
+    </div>
+                </body>
+                    </html>
+                
